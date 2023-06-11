@@ -1,3 +1,0 @@
-# Portafolio CarlDesigner
-
-Author: `@CarlDesigner`
