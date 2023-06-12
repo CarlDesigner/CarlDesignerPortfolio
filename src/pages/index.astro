@@ -19,45 +19,69 @@ const last_posts = posts.slice(0, 3);
       </text>
     </div>
     <div class="mt-8">
-      <a class="btn" href="https://twitter.com/manuelernestog" target="_blank"> Conectémonos!</a>
-      <a href="https://github.com/manuelernestog/astrofy" target="_blank" class="btn btn-outline ml-5">
-        Get This template
+      
+      <a href="https://github.com/CarlDesigner" target="_blank" class="btn btn-outline ml-5">
+        Conectémonos!
       </a>
     </div>
   </div>
 
   <div>
-    <div class="text-3xl w-full font-bold mb-2">My last projects {"</>"}</div>
+    <div class="text-3xl w-full font-bold mb-2">Mis últimos proyectos</div>
   </div>
 
   <HorizontalCard
-    title="Demo Project 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
+    title="Aromia Perfumeria"
+    img="https://res.cloudinary.com/do66lfayc/image/upload/v1686549657/Portfolio/imgProyectos/Aromia_ef3ttx.jpg"
+    desc="Tienda en linea para una perfumeria que ofrece fragancias exclusivas e importadas de muy buena calidad."
+    url="https://aromia.vercel.app/"
     badge="NEW"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
+    title="Formulario de envío"
+    img="https://res.cloudinary.com/do66lfayc/image/upload/v1686548988/Portfolio/imgProyectos/Formulario_t24opa.jpg"
+    desc="Formulario de envio de información, esta información se almacena en una base de datos en tiempo real en Firebase haciendo uso de Firestore."
+    url="https://enviodatos.netlify.app/"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="FOSS"
+    title="Moira Couture"
+    img="https://res.cloudinary.com/do66lfayc/image/upload/v1686548613/Portfolio/imgProyectos/Moira_ncfzrf.jpg"
+    desc="Moira Couture es un proyecto desarrollado con Reac y el Stack MERN, hace parte del Diplomado de Misión TIC 2022 y la Universidad Tecnológica de Pereira."
+    url="https://moira-couture.vercel.app/"
+    badge=""
   />
 
   <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Ultimos Post del Blog</div>
   </div>
+  
+  <HorizontalCard
+    title="Aprende HTML5 de una vez por todas"
+    img="https://unsimpleprogramador.vercel.app/_astro/aprendehtml5_zq6d5u_289QjJ.avif"
+    desc="¡Bienvenidos a la guía de HTML5 para desarrolladores web autodidactas!."
+    url="https://unsimpleprogramador.vercel.app/blog/aprede-html5"
+    badge=""
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="6 Consejos para aprender a programar si eres autodidacta"
+    img="https://unsimpleprogramador.vercel.app/_astro/6consejos_mdbqs3_1TpQv5.avif"
+    desc="Aprender a programar suele ser un proco frustrante al inicio, Aquí hay algunos consejos que puedes considerar si quieres iniciar en la programación siendo un autodidacta.."
+    url="https://unsimpleprogramador.vercel.app/blog/6consejos"
+    badge=""
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Hola Mundo! :)"
+    img="https://unsimpleprogramador.vercel.app/_astro/pilot_em6kql_2n57TY.avif"
+    desc="¡Esta sección es una prueba! Antes de publicar nuestro blog de programación, queremos asegurarnos de que todo se vea y funcione correctamente. Por lo tanto, estamos realizando algunas pruebas para asegurarnos de que nuestro contenido se vea bien y sea fácil de leer."
+    url="https://unsimpleprogramador.vercel.app/blog/piloto"
+    badge=""
+  />
 
-  {
+  <!--{
     last_posts.map((post) => (
       <>
         <HorizontalCard
@@ -71,5 +95,6 @@ const last_posts = posts.slice(0, 3);
         <div class="divider my-0" />
       </>
     ))
-  }
+  } -->
 </BaseLayout>
+
