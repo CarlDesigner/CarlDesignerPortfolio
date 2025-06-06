@@ -10,6 +10,9 @@
     "astro": "astro",
     "format": "prettier --write . --plugin=prettier-plugin-astro"
   },
+  "engines": {
+    "node": "20"
+  },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
     "@astrojs/react": "^4.1.5",
@@ -33,9 +36,5 @@
     "prettier": "^3.4.2",
     "prettier-plugin-astro": "^0.14.1"
   },
-  "engines": {
-  "node": "18.20.8"
-  },
   "packageManager": "pnpm@9.1.2+sha1.907f57a52517de34399d66401bf220a549e47b57"
-  
 }
