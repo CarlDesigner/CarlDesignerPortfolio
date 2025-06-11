@@ -4,6 +4,8 @@ import Experience from "../components/experience/index.astro";
 import { EXPERIENCE } from "../data/experience";
 import { SOCIALS } from "../data/socials";
 import Layout from "../layouts/Layout.astro";
+import { PROJECTS } from "../data/projects";
+import Project from "../components/projects/index.astro";
 ---
 
 <Layout title="Carlos Fajardo">
@@ -18,7 +20,11 @@ import Layout from "../layouts/Layout.astro";
           <div
             class="flex lg:items-start gap-4 flex-col lg:flex-row items-center text-center lg:text-left"
           >
-            <img src="/carlosfajardo.webp" alt="Vadim Rusin" class="w-40 h-40 rounded-3xl" />
+            <img
+              src="/carlosfajardo.webp"
+              alt="Vadim Rusin"
+              class="w-40 h-40 rounded-3xl"
+            />
             <div>
               <a
                 href="/"
@@ -27,7 +33,7 @@ import Layout from "../layouts/Layout.astro";
                 <h1>Carlos Fajardo</h1>
               </a>
               <h2 class="mt-2 text-sm lg:text-lg font-medium text-neutral-400">
-                Desarrollador Web
+                Desarrollador Web / E-commerce
               </h2>
 
               <a
@@ -88,28 +94,36 @@ import Layout from "../layouts/Layout.astro";
             <div>
               <div class="mb-4 space-y-4">
                 <p>
-                  Con más de 5 años de experiencia, soy especialista en tiendas online y sitios web modernos. Ayudo a emprendedores y marcas a tener presencia digital con soluciones efectivas y personalizadas. Escríbeme y desarrollaré tu proyecto web para que vendas más y mejores tu presencia online.
+                  Con más de 5 años de experiencia, soy especialista en tiendas
+                  online y sitios web modernos. Ayudo a emprendedores y marcas a
+                  tener presencia digital con soluciones efectivas y
+                  personalizadas. Escríbeme y desarrollaré tu proyecto web para
+                  que vendas más y mejores tu presencia online.
                 </p>
 
                 <p>
-                  Mi misión es impulsar tu negocio con soluciones que realmente funcionan, conectan con tus clientes y venden.
+                  Mi misión es impulsar tu negocio con soluciones que realmente
+                  funcionan, conectan con tus clientes y venden.
+                </p>
               </div>
             </div>
           </section>
+
           <section
             id="experience"
             class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
             aria-label="Work experience"
           >
             <div
-              class="sticky top-0 z-20 -mx-6 mb-4 w-screen px-6 py-3 backdrop-blur-lg md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0"
+              class="sticky top-0 z-20 -mx-6 mb-4 w-screen px-6 py-3 backdrop-blur-lg md:-mx-12 md:px-12 lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0"
             >
               <h2
-                class="text-sm font-bold uppercase tracking-widest text-neutral-200 lg:sr-only"
+                class="text-sm font-bold uppercase tracking-widest text-neutral-200"
               >
                 Experiencia
               </h2>
-            </div><div>
+            </div>
+            <div>
               <ol class="group/list space-y-12">
                 {EXPERIENCE.map((experience) => <Experience {...experience} />)}
               </ol>
@@ -127,13 +141,13 @@ import Layout from "../layouts/Layout.astro";
                     <span
                       class="border-b border-transparent pb-px transition group-hover:border-neutral-300 motion-reduce:transition-none"
                     >
-                      View Full
+                      Ver CV
                     </span>
                     <span class="whitespace-nowrap">
                       <span
                         class="border-b border-transparent pb-px transition group-hover:border-neutral-300 motion-reduce:transition-none"
                       >
-                        Résumé
+                        Completo
                       </span>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -152,6 +166,67 @@ import Layout from "../layouts/Layout.astro";
               </div>
             </div>
           </section>
+
+          
+          <section
+            id="projects"
+            class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
+            aria-label="Proyectos"
+          >
+            <div
+              class="sticky top-0 z-20 -mx-6 mb-4 w-screen px-6 py-3 backdrop-blur-lg md:-mx-12 md:px-12 lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0"
+            >
+              <h2
+                class="text-sm font-bold uppercase tracking-widest text-neutral-200"
+              >
+                Proyectos
+              </h2>
+            </div> <br><br>
+            <div>
+              <ol class="group/list space-y-12">
+                {PROJECTS.map((project) => <Project {...project} />)}
+              </ol>
+
+              <div class="mt-12">
+                <a
+                  data-ccursor
+                  class="inline-flex items-center leading-tight text-neutral-200 font-semibold group p-2 rounded px-3"
+                  aria-label="Ver más proyectos en GitHub"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  href="https://github.com/tuusuario"
+                >
+                  <span>
+                    <span
+                      class="border-b border-transparent pb-px transition group-hover:border-neutral-300 motion-reduce:transition-none"
+                    >
+                      Ver más
+                    </span>
+                    <span class="whitespace-nowrap">
+                      <span
+                        class="border-b border-transparent pb-px transition group-hover:border-neutral-300 motion-reduce:transition-none"
+                      >
+                        Proyectos
+                      </span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        class="ml-1 inline-block h-4 w-4 shrink-0 -translate-y-px transition-transform group-hover:translate-x-2 group-focus-visible:translate-x-2 motion-reduce:transition-none"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                    </span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </section>
+
           <footer class="max-w-md pb-16 text-sm text-neutral-500 sm:pb-0">
             <p>
               Designed in
@@ -175,8 +250,11 @@ import Layout from "../layouts/Layout.astro";
     </div>
   </div>
 
-  <footer class="text-center py-4 text-xs">
+  <!-- <footer class="text-center py-4 text-xs">
     {new Date().getFullYear()} All rights reserved.
+  </footer> -->
+  <footer class="text-center py-4 text-xs text-neutral-500">
+    © {new Date().getFullYear()} CarDesigner. Todos los derechos reservados.
   </footer>
 </Layout>
 
