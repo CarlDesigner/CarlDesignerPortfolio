@@ -51,7 +51,7 @@ export const EXPERIENCE: ExperienceProp[] = [
     description:
       "Brindé soporte técnico especializado en sistemas de seguridad electrónica como cámaras IP, DVRs, control de acceso y alarmas, integrando herramientas digitales y programación para automatizar procesos y mejorar la eficiencia del servicio, Desarrollé paneles internos para monitoreo y gestión de incidencias.",
     technologies: [
-      "Sistemas de Seguridad",
+      "Programación en Sistemas de Seguridad",
       "Soporte Técnico",
       "Controles de acceso biométricos",
       "Mantenimiento preventivo",
