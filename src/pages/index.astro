@@ -9,7 +9,7 @@ import Project from "../components/projects/index.astro";
 ---
 
 <Layout title="Carlos Fajardo">
-  <div class="relative hero z-10">
+  <div id="hero" class="relative hero z-10">
     <div
       class="mx-auto min-h-screen max-w-screen-2xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0"
     >
@@ -181,7 +181,7 @@ import Project from "../components/projects/index.astro";
               >
                 Proyectos
               </h2>
-            </div> <br><br>
+            </div>
             <div>
               <ol class="group/list space-y-12">
                 {PROJECTS.map((project) => <Project {...project} />)}
