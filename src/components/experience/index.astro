@@ -6,9 +6,14 @@ const { dates, title, company, companyUrl, description, technologies, logo } =
   Astro.props;
 ---
 
-<li>
+<li class="relative flex gap-x-4">
+  <!-- Línea vertical completa -->
+  <div class="absolute left-4 top-0 w-px h-full bg-neutral-700 z-0 before:content-[''] before:absolute before:inset-0 before:w-2 before:h-full before:-left-0.5 before:bg-white before:opacity-10 before:blur before:rounded-full"></div>
+  <div class="flex flex-col items-center relative h-full" style="min-width: 2rem;">
+    <span class="absolute left-1/2 -translate-x-1/2 z-10 w-2 h-2 rounded-full bg-white shadow animate-pulse before:content-[''] before:absolute before:inset-0 before:rounded-full before:bg-white before:opacity-60 before:blur-sm before:animate-pulse mt-1"></span>
+  </div>
   <div
-    class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50 hover:backdrop-blur-sm duration-500"
+    class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50 hover:backdrop-blur-sm duration-500 flex-1"
   >
     <div
       class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-neutral-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"

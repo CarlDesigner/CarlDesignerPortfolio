@@ -13,6 +13,7 @@ import Cloudflare from "../components/icons/Cloudflare.astro";
 import Tiktok from "../components/icons/Tiktok.astro";
 import Bootstrap from "../components/icons/Bootstrap.astro";
 import Strapi from "../components/icons/Strapi.astro";
+import Usp from "../components/icons/Usp.astro";
 
 
 export const TAGS = {
@@ -90,6 +91,11 @@ export const TAGS = {
     name: "Strapi",
     class: "bg-[#000000] text-white",
     icon: Strapi,
+  },
+  USP: {
+    name: "USP",
+    class: "bg-[#000000] text-white",
+    icon: Usp,
   },
 };
 

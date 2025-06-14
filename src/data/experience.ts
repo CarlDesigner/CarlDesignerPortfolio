@@ -2,9 +2,9 @@ import type { Props as ExperienceProp } from "../components/experience/props";
 
 export const EXPERIENCE: ExperienceProp[] = [
   {
-    dates: "Octubre 2024 — Actualidad",
+    dates: "Diciembre 2024 — Actualidad",
     title: "Desarrollador Web Freelance",
-    company: "Freelancer (Remoto)",
+    company: "Independiente",
     companyUrl: "https://wa.me/573202028049?text=Hola%2C%20me%20interesa%20tu%20trabajo",
     description:
       "He trabajado con más de 30 clientes a través de plataformas como Freelancer.com, Fiverr y de manera directa con emprendedores y pequeñas marcas, desarrollando tiendas en línea y sitios web modernos adaptados a sus necesidades. Actualmente, mantengo una base activa de clientes recurrentes, brindando soporte, mejoras continuas y nuevos desarrollos según sus objetivos de negocio.",
@@ -26,7 +26,7 @@ export const EXPERIENCE: ExperienceProp[] = [
     logo: "/logos/free.webp",
   },
   {
-    dates: "Septiembre 2022 — Noviembre 2024",
+    dates: "Septiembre 2021 — Noviembre 2024",
     title: "Especialista en Ecommerce y UX/UI",
     company: "Shark Agencia",
     companyUrl: "https://wa.me/573202028049?text=Hola%2C%20me%20interesa%20tu%20trabajo",
@@ -44,7 +44,7 @@ export const EXPERIENCE: ExperienceProp[] = [
     logo: "/logos/shark.webp",
   },
   {
-    dates: "Abril 2019 — Agosto 2022",
+    dates: "Abril 2018 — Agosto 2021",
     title: "Soporte en Seguridad Electrónica",
     company: "Securitas Colombia",
     companyUrl: "https://wa.me/573202028049?text=Hola%2C%20me%20interesa%20tu%20trabajo",
