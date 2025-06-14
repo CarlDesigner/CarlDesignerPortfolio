@@ -1,6 +1,7 @@
 ---
-import SparklesCore from "../components/SparklesCore.tsx";
+import SparklesCore from "../components/SparklesCore";
 import Navbar from "../components/Navbar.astro";
+import MobileNavbar from "../components/MobileNavbar.astro";
 
 interface Props {
   title: string;
@@ -23,7 +24,8 @@ const { title } = Astro.props;
   <body
     class="bg-black leading-relaxed text-neutral-200 tracking-wide antialiased selection:bg-neutral-300 selection:text-neutral-900 z-10 relative scroll-smooth"
   >
-    <Navbar />
+    <Navbar class="hidden md:block" />
+    <MobileNavbar class="block md:hidden" />
     <SparklesCore
       client:idle
       id="tsparticlesfullpage"
