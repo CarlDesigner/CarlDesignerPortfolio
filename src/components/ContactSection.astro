@@ -1,0 +1,69 @@
+---
+// Componente de sección de contacto minimalista y compacto alineado como las demás secciones, usando Web3Forms
+---
+
+<section id="contact" class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24 py-10">
+    <!-- Título sticky solo visible en móvil, igual que otras secciones -->
+    <div  class="sticky top-0 z-20 -mx-6 mb-4 w-screen px-6 py-3 backdrop-blur-lg md:-mx-12 md:px-12 lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
+    <h2 class="text-sm font-bold uppercase tracking-widest text-neutral-200">
+      Contacto
+    </h2>
+  </div>
+    <div class="max-w-md mx-auto px-4 py-8 bg-neutral-900/80 rounded-2xl shadow-lg border border-neutral-800">
+      <h2 class="text-2xl font-bold text-neutral-100 mb-1 text-center">Contacto</h2>
+      <p class="text-neutral-400 mb-5 text-center text-sm">¿Tienes un proyecto o idea? ¡Hablemos!</p>
+      <div class="h-3"></div>
+      <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" class="flex flex-col gap-3">
+        <input type="hidden" name="access_key" value="90f7e594-9316-4d5c-b5a6-4d84aed1ce6d" />
+        <input type="hidden" name="from_name" value="Portafolio CarlDesigner" />
+        <input type="hidden" name="subject" value="Nuevo mensaje de contacto" />
+        <input type="hidden" name="to" value="carldesigner@outlook.com" />
+        <input type="text" name="name" placeholder="Nombre" required class="bg-neutral-800/80 border border-neutral-700 rounded-lg px-3 py-2 text-neutral-100 placeholder-neutral-500 focus:outline-none focus:ring-2 focus:ring-yellow-400/60 text-sm transition" />
+        <input type="email" name="email" placeholder="Correo electrónico" required class="bg-neutral-800/80 border border-neutral-700 rounded-lg px-3 py-2 text-neutral-100 placeholder-neutral-500 focus:outline-none focus:ring-2 focus:ring-yellow-400/60 text-sm transition" />
+        <textarea name="message" placeholder="Tu mensaje" rows="3" required class="bg-neutral-800/80 border border-neutral-700 rounded-lg px-3 py-2 text-neutral-100 placeholder-neutral-500 focus:outline-none focus:ring-2 focus:ring-yellow-400/60 text-sm transition"></textarea>
+        <button type="submit" class="bg-yellow-400 text-neutral-900 font-semibold rounded-lg py-2 mt-1 hover:bg-yellow-300 transition focus:outline-none focus:ring-2 focus:ring-yellow-400/80 text-sm">Enviar</button>
+        <div id="formAlert" class="hidden text-green-400 text-center text-sm mt-2 transition-opacity duration-700">¡Gracias! Tu mensaje ha sido enviado correctamente.</div>
+      </form>
+      
+    </div>
+  </div>
+</section>
+
+<script>
+  if (typeof window !== 'undefined') {
+    document.documentElement.style.scrollBehavior = 'smooth';
+    const form = document.getElementById('contactForm');
+    const alert = document.getElementById('formAlert');
+    if (form instanceof HTMLFormElement) {
+      form.addEventListener('submit', async function (e) {
+        e.preventDefault();
+        const formData = new FormData(form);
+        const response = await fetch(form.action, {
+          method: 'POST',
+          body: formData
+        });
+        if (alert) {
+          if (response.ok) {
+            form.reset();
+            alert.classList.remove('hidden');
+            alert.textContent = '¡Gracias! Tu mensaje ha sido enviado correctamente.';
+            alert.classList.remove('text-red-400');
+            alert.classList.add('text-green-400');
+            setTimeout(() => {
+              alert.classList.add('opacity-0');
+              setTimeout(() => {
+                alert.classList.add('hidden');
+                alert.classList.remove('opacity-0');
+              }, 700);
+            }, 4000);
+          } else {
+            alert.textContent = 'Hubo un error. Intenta de nuevo.';
+            alert.classList.remove('hidden');
+            alert.classList.remove('text-green-400');
+            alert.classList.add('text-red-400');
+          }
+        }
+      });
+    }
+  }
+</script>
