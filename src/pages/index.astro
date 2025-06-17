@@ -77,11 +77,11 @@ import ContactSection from "../components/ContactSection.astro";
         <main id="content" class="pt-24 lg:w-1/2 lg:py-24">
           <section
             id="about"
-            class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
+            class="mb-16 scroll-mt-4 md:scroll-mt-12 lg:mb-36 lg:scroll-mt-24"
             aria-label="About me"
           >
             <div
-              class="sticky top-0 z-20 -mx-6 mb-4 w-screen px-6 py-3 backdrop-blur-lg md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0"
+              class="sticky top-0 z-20 -mx-6 mb-4 w-screen px-6 py-1 md:py-3 backdrop-blur-lg md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0"
             >
               <h2
                 class="text-sm font-bold uppercase tracking-widest text-neutral-200 lg:sr-only"
@@ -109,11 +109,11 @@ import ContactSection from "../components/ContactSection.astro";
 
           <section
             id="experience"
-            class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
+            class="mb-16 scroll-mt-4 md:scroll-mt-12 lg:mb-36 lg:scroll-mt-24"
             aria-label="Work experience"
           >
             <div
-              class="sticky top-0 z-20 -mx-6 mb-4 w-screen px-6 py-3 backdrop-blur-lg md:-mx-12 md:px-12 lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0"
+              class="sticky top-0 z-20 -mx-6 mb-4 w-screen px-6 py-1 md:py-3 backdrop-blur-lg md:-mx-12 md:px-12 lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0"
             >
               <h2
                 class="text-sm font-bold uppercase tracking-widest text-neutral-200"
@@ -167,11 +167,11 @@ import ContactSection from "../components/ContactSection.astro";
 
           <section
             id="projects"
-            class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
+            class="mb-16 scroll-mt-4 md:scroll-mt-12 lg:mb-36 lg:scroll-mt-24"
             aria-label="Proyectos"
           >
             <div
-              class="sticky top-0 z-20 -mx-6 mb-4 w-screen px-6 py-3 backdrop-blur-lg md:-mx-12 md:px-12 lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0"
+              class="sticky top-0 z-20 -mx-6 mb-4 w-screen px-6 py-1 md:py-3 backdrop-blur-lg md:-mx-12 md:px-12 lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0"
             >
               <h2
                 class="text-sm font-bold uppercase tracking-widest text-neutral-200"
@@ -226,6 +226,7 @@ import ContactSection from "../components/ContactSection.astro";
 
           <ServicesSection />
 
+
           <ContactSection />
 
           <footer class="max-w-md pb-16 text-sm text-neutral-500 sm:pb-0">
@@ -254,7 +255,7 @@ import ContactSection from "../components/ContactSection.astro";
   <!-- <footer class="text-center py-4 text-xs">
     {new Date().getFullYear()} All rights reserved.
   </footer> -->
-  <footer class="text-center py-4 text-xs text-neutral-500">
+  <footer class="text-center py-4 text-xs text-neutral-500 absolute bottom-12 left-0 w-full">
     © {new Date().getFullYear()} CarDesigner. Todos los derechos reservados.
   </footer>
 </Layout>
