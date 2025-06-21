@@ -6,24 +6,24 @@ import ServicesIcon from "./icons/Services.astro";
 import ContactIcon from "./icons/Contact.astro";
 ---
 <!-- Navbar móvil fija abajo, más pequeña y compacta, ahora con Servicios y Contacto -->
-<nav class="fixed bottom-2 left-1/2 z-50 -translate-x-1/2 bg-neutral-900/60 backdrop-blur-2xl rounded-full shadow-lg px-2 py-0.5 flex gap-3 items-center justify-center border border-neutral-700/60 ring-1 ring-white/20 w-[95vw] max-w-sm md:hidden">
-  <a href="#hero" class="text-white font-semibold px-1 py-0.5 rounded-full transition hover:bg-neutral-800/80 hover:text-yellow-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-400/80 flex flex-col items-center text-[11px]" onclick="event.preventDefault(); document.querySelector('#hero').scrollIntoView({ behavior: 'smooth' });">
+<nav class="fixed bottom-2 left-1/2 z-50 -translate-x-1/2 bg-neutral-900/60 backdrop-blur-2xl rounded-md shadow-lg px-1 py-0.5 flex gap-3 items-center justify-center border border-neutral-700/60 ring-1 ring-white/20 w-[95vw] max-w-sm md:hidden">
+  <a href="#hero" class="text-white font-semibold px-1 py-0.5 rounded-md transition hover:bg-neutral-800/80 hover:text-yellow-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-400/80 flex flex-col items-center text-[11px]" onclick="event.preventDefault(); document.querySelector('#hero').scrollIntoView({ behavior: 'smooth' });">
     <HomeIcon class="w-5 h-5 mb-0.5" />
     <span>Inicio</span>
   </a>
-  <a href="#experience" class="text-white font-semibold px-1 py-0.5 rounded-full transition hover:bg-neutral-800/80 hover:text-yellow-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-400/80 flex flex-col items-center text-[11px]" onclick="event.preventDefault(); document.querySelector('#experience').scrollIntoView({ behavior: 'smooth' });">
+  <a href="#experience" class="text-white font-semibold px-1 py-0.5 rounded-md transition hover:bg-neutral-800/80 hover:text-yellow-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-400/80 flex flex-col items-center text-[11px]" onclick="event.preventDefault(); document.querySelector('#experience').scrollIntoView({ behavior: 'smooth' });">
     <BookIcon class="w-5 h-5 mb-0.5" />
     <span>Experiencia</span>
   </a>
-  <a href="#projects" class="text-white font-semibold px-1 py-0.5 rounded-full transition hover:bg-neutral-800/80 hover:text-yellow-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-400/80 flex flex-col items-center text-[11px]" onclick="event.preventDefault(); document.querySelector('#projects').scrollIntoView({ behavior: 'smooth' });">
+  <a href="#projects" class="text-white font-semibold px-1 py-0.5 rounded-md transition hover:bg-neutral-800/80 hover:text-yellow-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-400/80 flex flex-col items-center text-[11px]" onclick="event.preventDefault(); document.querySelector('#projects').scrollIntoView({ behavior: 'smooth' });">
     <PortfolioIcon class="w-5 h-5 mb-0.5" />
     <span>Proyectos</span>
   </a>
-  <a href="#services" class="text-white font-semibold px-1 py-0.5 rounded-full transition hover:bg-neutral-800/80 hover:text-yellow-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-400/80 flex flex-col items-center text-[11px]" onclick="event.preventDefault(); document.querySelector('#services').scrollIntoView({ behavior: 'smooth' });">
+  <a href="#services" class="text-white font-semibold px-1 py-0.5 rounded-md transition hover:bg-neutral-800/80 hover:text-yellow-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-400/80 flex flex-col items-center text-[11px]" onclick="event.preventDefault(); document.querySelector('#services').scrollIntoView({ behavior: 'smooth' });">
     <ServicesIcon class="w-5 h-5 mb-0.5" />
     <span>Servicios</span>
   </a>
-  <a href="#contact" class="text-white font-semibold px-1 py-0.5 rounded-full transition hover:bg-neutral-800/80 hover:text-yellow-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-400/80 flex flex-col items-center text-[11px]" onclick="event.preventDefault(); document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });">
+  <a href="#contact" class="text-white font-semibold px-1 py-0.5 rounded-md transition hover:bg-neutral-800/80 hover:text-yellow-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-400/80 flex flex-col items-center text-[11px]" onclick="event.preventDefault(); document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });">
     <ContactIcon class="w-5 h-5 mb-0.5" />
     <span>Contacto</span>
   </a>
